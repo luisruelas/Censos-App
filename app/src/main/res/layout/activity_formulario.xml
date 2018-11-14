@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioActivity"
+    android:background="@color/bgBlue"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="@dimen/tvmargintop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/spaceleft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/llpage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:layout_marginBottom="@dimen/papermarginbot"
+                android:background="@drawable/rectbglayout"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:id="@+id/innerspaceleft"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/llinnercontent">
+
+                    <LinearLayout
+                        android:id="@+id/llfecha"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/tvmargintop">
+                            <LinearLayout
+                                android:layout_weight="6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/llspacerfecha"
+                                android:orientation="horizontal"></LinearLayout>
+                            <EditText
+                                android:gravity="center"
+                                android:background="@drawable/setres"
+                                android:inputType="textMultiLine|number"
+                                android:maxLength="2"
+                                android:maxLines="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/etfechadia"
+                                android:layout_weight="1" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/slash"
+                                android:id="@+id/tvslashfecha1" />
+                            <EditText
+                                android:gravity="center"
+                                android:background="@drawable/setres"
+                                android:inputType="textMultiLine|number"
+                                android:maxLength="2"
+                                android:maxLines="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/etfechames"
+                                android:layout_weight="1" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/slash"
+                                android:id="@+id/tvslashfecha2" />
+                            <EditText
+                                android:gravity="center"
+                                android:background="@drawable/setres"
+                                android:inputType="textMultiLine|number"
+                                android:maxLength="4"
+                                android:maxLines="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/etfechaaño"
+                                android:layout_weight="2" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/tvmargintop">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7"></LinearLayout>
+                            <EditText
+                                android:gravity="center"
+                                android:background="@drawable/setres"
+                                android:inputType="textMultiLine|number"
+                                android:maxLength="2"
+                                android:maxLines="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/etfechahora"
+                                android:layout_weight="1" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/dospuntos"
+                                android:id="@+id/tvdospuntos" />
+                            <EditText
+                                android:gravity="center"
+                                android:background="@drawable/setres"
+                                android:inputType="textMultiLine|number"
+                                android:maxLength="2"
+                                android:maxLines="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/etfechaminutos"
+                                android:layout_weight="1" />
+                            <TextView
+                                android:gravity="center"
+                                android:layout_marginLeft="@dimen/ampmleftmargin"
+                                android:inputType="textMultiLine"
+                                android:maxLength="2"
+                                android:maxLines="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:id="@+id/etfechaampm"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/tvmargintop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/apellidopac"
+                        android:textSize="@dimen/littletext" />
+
+                    <EditText
+                        android:id="@+id/tvapellido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/setres"
+                        android:gravity="center_horizontal"
+                        android:inputType="textMultiLine|textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/etintspace"
+                        android:paddingTop="@dimen/etintspace"
+                        android:textSize="@dimen/fontlabel" />
+                    <TextView
+                        android:layout_marginTop="@dimen/tvmargintop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/nombrepac"
+                        android:textSize="@dimen/littletext" />
+
+                    <EditText
+                        android:id="@+id/etnombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/setres"
+                        android:gravity="center_horizontal"
+                        android:inputType="textMultiLine|textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/etintspace"
+                        android:paddingTop="@dimen/etintspace"
+                        android:textSize="@dimen/fontlabel" />
+
+                    <LinearLayout
+                        android:id="@+id/llsexos"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp">
+
+                        <Button
+                            android:id="@+id/btmasc"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/layerlistmasculino" />
+
+                        <Button
+                            android:id="@+id/btfem"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/layerlistfemenino" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/tvmargintop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/peso"
+                        android:textSize="@dimen/littletext" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/etpeso"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/setres"
+                        android:gravity="center_horizontal"
+                        android:inputType="number|numberDecimal"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/etintspace"
+                        android:paddingTop="@dimen/etintspace"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/tvmargintop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/talla"
+                        android:textSize="@dimen/littletext" />
+
+                    <EditText
+                        android:id="@+id/ettalla"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/setres"
+                        android:gravity="center_horizontal"
+                        android:inputType="number|numberDecimal"
+                        android:maxLength="5"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/etintspace"
+                        android:paddingTop="@dimen/etintspace"
+                        android:textSize="@dimen/fontlabel" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/tvmargintop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/temperatura"
+                        android:textSize="@dimen/littletext" />
+
+                    <EditText
+                        android:id="@+id/ettemperatura"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/setres"
+                        android:gravity="center_horizontal"
+                        android:inputType="number|numberDecimal"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/etintspace"
+                        android:paddingTop="@dimen/etintspace"
+                        android:textSize="@dimen/fontlabel" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/tvmargintop"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/perdidassensibles"
+                        android:textSize="@dimen/littletext" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/etperdidassensibles"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="@drawable/setres"
+                            android:gravity="center_horizontal"
+                            android:inputType="number|numberDecimal"
+                            android:maxLength="7"
+                            android:maxLines="1"
+                            android:paddingBottom="@dimen/etintspace"
+                            android:paddingTop="@dimen/etintspace"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/ivmas"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llperdidassensibles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/tvmargintop"
+                        android:id="@+id/llscopeso"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:text="@string/sc"
+                            android:id="@+id/btsc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectmenuelement" />
+
+                        <Button
+                            android:text="@string/porpeso"
+                            android:id="@+id/btpeso"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectmenuelement" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/tvmargintop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/horas"
+                        android:textSize="@dimen/littletext" />
+
+                    <EditText
+                        android:id="@+id/ethoras"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/setres"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/etintspace"
+                        android:paddingTop="@dimen/etintspace"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:background="@drawable/selbotonbg"
+                            android:layout_marginTop="@dimen/tvmargintop"
+                            android:id="@+id/btguardar"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Guardar" />
+
+                        <Button
+                            android:textStyle="bold"
+                            android:background="@drawable/selbotonbg"
+                            android:textColor="@color/colorWhite"
+                            android:layout_marginTop="@dimen/tvmargintop"
+                            android:layout_marginBottom="@dimen/tvlastmargin"
+                            android:id="@+id/btmostrar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Mostrar" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"></LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/spaceright"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

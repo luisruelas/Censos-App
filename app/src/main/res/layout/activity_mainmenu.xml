@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+        <TextView
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingtextmain"
+            android:paddingTop="@dimen/paddingtextmain"
+            android:textSize="@dimen/fontmainmenu"
+            android:background="@drawable/rectmenuelement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textmain"
+            android:id="@+id/tvgomain" />
+        <TextView
+            android:layout_marginTop="@dimen/tvmargintop"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingtextmain"
+            android:paddingTop="@dimen/paddingtextmain"
+            android:textSize="@dimen/fontmainmenu"
+            android:background="@drawable/rectmenuelement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textver"
+            android:id="@+id/tvgopacs" />
+        <TextView
+            android:layout_marginTop="@dimen/tvmargintop"
+            android:gravity="center"
+            android:paddingBottom="@dimen/paddingtextmain"
+            android:paddingTop="@dimen/paddingtextmain"
+            android:textSize="@dimen/fontmainmenu"
+            android:background="@drawable/rectmenuelement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="destruir bd"
+            android:id="@+id/tvchingarbd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></LinearLayout>
+</LinearLayout>

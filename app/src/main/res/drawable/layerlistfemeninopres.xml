@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:right="@dimen/strokebg"
+        android:left="@dimen/strokebg"
+        android:bottom="@dimen/strokebg"
+        android:top="@dimen/strokebg">
+        <bitmap android:src="@drawable/femenino"></bitmap>
+    </item>
+    <item android:drawable="@drawable/strokepres"></item>
+</layer-list>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+     android:layout_width="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu"
+    android:id="@+id/lllistadepacientes"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/tvmargintop"
+    android:paddingBottom="@dimen/tvmargintop">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/lllvpacientes"
+        android:paddingTop="@dimen/tvmargintop"
+        android:paddingBottom="@dimen/tvmargintop"
+        android:paddingLeft="@dimen/tvmargintop"
+        android:paddingRight="@dimen/tvmargintop"
+        android:layout_width="0dp"
+        android:background="@drawable/rectbglayout"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+    <ListView
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorTransparent"
+        android:dividerHeight="@dimen/dividerheight"
+        android:id="@+id/lvpacientes">
+    </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/llalpha"
+        android:visibility="gone"
+        android:background="@color/colorBlack"
+        android:alpha="@dimen/popupalpha"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </LinearLayout>
+</FrameLayout>
